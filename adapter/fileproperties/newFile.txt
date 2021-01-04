@@ -1,0 +1,5 @@
+#written by fileProperties.
+#Mon Jan 04 20:40:41 JST 2021
+month=4
+year=2004
+day=21
