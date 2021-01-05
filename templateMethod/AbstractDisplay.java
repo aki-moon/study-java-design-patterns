@@ -1,11 +1,11 @@
 package templateMethod;
 
 public abstract class AbstractDisplay {
-	public abstract void open();
+	protected abstract void open();
 
-	public abstract void print();
+	protected abstract void print();
 
-	public abstract void close();
+	protected abstract void close();
 
 	public final void display() {
 		open();
