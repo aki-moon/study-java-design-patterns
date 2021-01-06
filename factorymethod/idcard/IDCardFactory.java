@@ -1,13 +1,14 @@
 package factorymethod.idcard;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 import factorymethod.framework.Factory;
 import factorymethod.framework.Product;
 
 public class IDCardFactory extends Factory {
-	private List<Product> owners = new ArrayList<Product>();
+	private int initialSerialNumber = 0;
+	private Map<Integer, String> idCardData = new HashMap<Integer, String>();
 
 	public IDCardFactory() {
 		super();
@@ -15,16 +16,17 @@ public class IDCardFactory extends Factory {
 
 	@Override
 	protected void registerProduct(Product product) {
-		owners.add(product);
+		IDCard card = (IDCard) product;
+		idCardData.put(card.getSerialNumber(), card.getOwner());
 	}
 
 	@Override
 	protected Product createProduct(String owner) {
-		return new IDCard(owner);
+		return new IDCard(owner, initialSerialNumber++);
 	}
 
-	public List<Product> getOwners() {
-		return owners;
+	public Map<Integer, String> getIdCardData() {
+		return idCardData;
 	}
 
 }
