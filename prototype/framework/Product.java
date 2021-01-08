@@ -1,7 +1,15 @@
 package prototype.framework;
 
-public interface Product extends Cloneable {
+public abstract class Product implements Cloneable {
 	public abstract void use(String use);
 
-	public abstract Product createClone();
+	public Product createClone() {
+		Product product = null;
+		try {
+			product = (Product) clone();
+		} catch (CloneNotSupportedException e) {
+			e.printStackTrace();
+		}
+		return product;
+	}
 }

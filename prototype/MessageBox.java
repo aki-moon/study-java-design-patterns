@@ -2,7 +2,7 @@ package prototype;
 
 import prototype.framework.Product;
 
-public class MessageBox implements Product {
+public class MessageBox extends Product {
 	private char decoChar;
 
 	public MessageBox(char decochar) {
@@ -21,18 +21,6 @@ public class MessageBox implements Product {
 			System.out.print(decoChar);
 		}
 		System.out.println("");
-	}
-
-	@Override
-	public Product createClone() {
-		Product product = null;
-		try {
-			product = (Product) clone();
-		} catch (CloneNotSupportedException e) {
-			e.printStackTrace();
-		}
-		return product;
-
 	}
 
 }

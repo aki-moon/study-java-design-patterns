@@ -2,7 +2,7 @@ package prototype;
 
 import prototype.framework.Product;
 
-public class UnderLinePen implements Product {
+public class UnderLinePen extends Product {
 
 	private char ulchar;
 
@@ -20,17 +20,6 @@ public class UnderLinePen implements Product {
 			System.out.print(ulchar);
 		}
 		System.out.println("");
-	}
-
-	@Override
-	public Product createClone() {
-		Product product = null;
-		try {
-			product = (Product) clone();
-		} catch (CloneNotSupportedException e) {
-			e.printStackTrace();
-		}
-		return product;
 	}
 
 }
