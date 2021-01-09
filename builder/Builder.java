@@ -1,6 +1,6 @@
 package builder;
 
-public abstract class Builder {
+public interface Builder {
 	public abstract void makeTitle(String title);
 	public abstract void makeString(String string);
 	public abstract void makeItems(String[] items);
