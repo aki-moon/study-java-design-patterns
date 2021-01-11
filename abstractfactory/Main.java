@@ -15,6 +15,7 @@ public class Main {
 			System.exit(0);
 		}
 		Factory factory = Factory.getFactory(args[0]);
+
 		Link asahi = factory.createLink("朝日新聞", "http://www.asahi.com/");
 		Link yomiuri = factory.createLink("読売新聞", "http://www.yomiuri.co.jp/");
 
@@ -38,8 +39,10 @@ public class Main {
 		traySearch.add(google);
 
 		Page page = factory.createPage("LinkPage", "author");
+		Page page2 = factory.createYahooPage();
 		page.add(traynews);
 		page.add(traySearch);
+		page2.output();
 		page.output();
 	}
 
