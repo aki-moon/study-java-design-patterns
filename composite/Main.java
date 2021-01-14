@@ -23,12 +23,16 @@ public class Main {
 		usrDirectory.add(yuki);
 		usrDirectory.add(hanako);
 		usrDirectory.add(tomura);
-		yuki.add(new File("diary.html", 100));
+		File file = new File("diary.html", 100);
+		yuki.add(file);
 		yuki.add(new File("Composite.java", 200));
 		hanako.add(new File("memo.txt", 300));
 		tomura.add(new File("game.doc", 400));
 		tomura.add(new File("junk.mail", 500));
 		rootDirectory.printList();
+
+		System.out.println("file = " + file.getFullName());
+		System.out.println("yuki = " + yuki.getFullName());
 		} catch (FileTreatmentException e) {
 			e.printStackTrace();
 		}
