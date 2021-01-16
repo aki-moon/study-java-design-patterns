@@ -31,7 +31,11 @@ public class Main {
 			hanako.add(new File("memo.txt", 300));
 			tomura.add(new File("game.doc", 400));
 			tomura.add(new File("junk.mail", 500));
-			rootDirectory.accept(new ListVisitor());
+
+			FileFindVisitor visitor = new FileFindVisitor(" .html");
+			rootDirectory.accept(visitor);
+
+//			rootDirectory.accept(new ListVisitor());
 		} catch (FileTreatmentException e) {
 			e.printStackTrace();
 		}
