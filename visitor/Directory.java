@@ -25,11 +25,9 @@ public class Directory extends Entry{
 
 	@Override
 	public int getSize() {
-		int size = 0;
-		for (Entry entry : directory) {
-			size += entry.getSize();
-		}
-		return size;
+		SizeVisitor sizeVisitor = new SizeVisitor();
+		accept(sizeVisitor);
+		return sizeVisitor.getSize();
 	}
 
 	public Entry add(Entry entry) {
