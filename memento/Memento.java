@@ -1,9 +1,10 @@
 package memento;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Memento {
+public class Memento implements Serializable{
 	int money;
 	List<String> fruits;
 
