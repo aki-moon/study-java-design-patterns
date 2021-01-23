@@ -3,12 +3,14 @@ package proxy;
 public class PrinterProxy implements Printable {
 	private String name;
 	private Printer real;
+	private String className;
 
 	public PrinterProxy() {
 	}
 
-	public PrinterProxy(String name) {
+	public PrinterProxy(String name, String className) {
 		this.name = name;
+		this.className = className;
 	}
 
 	@Override
@@ -30,9 +32,20 @@ public class PrinterProxy implements Printable {
 		real.print(string);
 	}
 
+	@SuppressWarnings("deprecation")
 	private void realize() {
 		if (real == null) {
-			real = new Printer(name);
+			try {
+				real = (Printer) Class.forName(className).newInstance();
+			} catch (InstantiationException e) {
+				e.printStackTrace();
+			} catch (IllegalAccessException e) {
+				e.printStackTrace();
+			} catch (ClassNotFoundException e) {
+				System.err.println("クラス" + className + " が見つかりません。");
+			}
+			real.setPrinterName(name);
+
 		}
 	}
 
