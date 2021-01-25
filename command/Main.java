@@ -1,5 +1,6 @@
 package command;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
@@ -16,6 +17,9 @@ public class Main extends JFrame implements ActionListener, MouseMotionListener,
 	private MacroCommand history = new MacroCommand();
 	private DrawCanvas canvas = new DrawCanvas(400, 400, history);
 	private JButton clearButton = new JButton("clear");
+	private JButton redButton = new JButton("red");
+	private JButton greenButton = new JButton("green");
+	private JButton blueButton = new JButton("blue");
 
 	@SuppressWarnings("deprecation")
 	public Main(String title) {
@@ -24,9 +28,15 @@ public class Main extends JFrame implements ActionListener, MouseMotionListener,
 		this.addWindowListener(this);
 		canvas.addMouseMotionListener(this);
 		clearButton.addActionListener(this);
+		redButton.addActionListener(this);
+		greenButton.addActionListener(this);
+		blueButton.addActionListener(this);
 
 		Box buttonBox = new Box(BoxLayout.X_AXIS);
 		buttonBox.add(clearButton);
+		buttonBox.add(redButton);
+		buttonBox.add(greenButton);
+		buttonBox.add(blueButton);
 		Box mainBox = new Box(BoxLayout.Y_AXIS);
 		mainBox.add(buttonBox);
 		mainBox.add(canvas);
@@ -84,7 +94,20 @@ public class Main extends JFrame implements ActionListener, MouseMotionListener,
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == clearButton) {
 			history.clear();
+			canvas.init();
 			canvas.repaint();
+		} else if (e.getSource() == redButton) {
+			Command command = new ColorCommand(canvas, Color.red);
+			history.append(command);
+			command.execute();
+		} else if (e.getSource() == greenButton) {
+			Command command = new ColorCommand(canvas, Color.green);
+			history.append(command);
+			command.execute();
+		} else if (e.getSource() == blueButton) {
+			Command command = new ColorCommand(canvas, Color.blue);
+			history.append(command);
+			command.execute();
 		}
 	}
 
