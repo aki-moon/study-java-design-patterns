@@ -3,17 +3,17 @@ package command;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseMotionListener;
+import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
 
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-public class Main extends JFrame implements ActionListener, MouseMotionListener, WindowListener {
+public class Main extends JFrame implements ActionListener {
 	private MacroCommand history = new MacroCommand();
 	private DrawCanvas canvas = new DrawCanvas(400, 400, history);
 	private JButton clearButton = new JButton("clear");
@@ -26,8 +26,20 @@ public class Main extends JFrame implements ActionListener, MouseMotionListener,
 	public Main(String title) {
 		super(title);
 
-		this.addWindowListener(this);
-		canvas.addMouseMotionListener(this);
+		this.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+
+		canvas.addMouseMotionListener(new MouseAdapter() {
+			public void mouseDragged(MouseEvent e) {
+				Command command = new DrawCommand(canvas, e.getPoint());
+				history.append(command);
+				command.execute();
+			}
+		});
+
 		clearButton.addActionListener(this);
 		redButton.addActionListener(this);
 		greenButton.addActionListener(this);
@@ -51,46 +63,6 @@ public class Main extends JFrame implements ActionListener, MouseMotionListener,
 
 	public static void main(String[] args) {
 		new Main("Command pattern sample");
-	}
-
-	@Override
-	public void windowOpened(WindowEvent e) {
-	}
-
-	@Override
-	public void windowClosing(WindowEvent e) {
-		System.exit(0);
-	}
-
-	@Override
-	public void windowClosed(WindowEvent e) {
-	}
-
-	@Override
-	public void windowIconified(WindowEvent e) {
-	}
-
-	@Override
-	public void windowDeiconified(WindowEvent e) {
-	}
-
-	@Override
-	public void windowActivated(WindowEvent e) {
-	}
-
-	@Override
-	public void windowDeactivated(WindowEvent e) {
-	}
-
-	@Override
-	public void mouseDragged(MouseEvent e) {
-		Command command = new DrawCommand(canvas, e.getPoint());
-		history.append(command);
-		command.execute();
-	}
-
-	@Override
-	public void mouseMoved(MouseEvent e) {
 	}
 
 	@Override
