@@ -20,6 +20,7 @@ public class Main extends JFrame implements ActionListener, MouseMotionListener,
 	private JButton redButton = new JButton("red");
 	private JButton greenButton = new JButton("green");
 	private JButton blueButton = new JButton("blue");
+	private JButton undoButton = new JButton("undo");
 
 	@SuppressWarnings("deprecation")
 	public Main(String title) {
@@ -31,12 +32,14 @@ public class Main extends JFrame implements ActionListener, MouseMotionListener,
 		redButton.addActionListener(this);
 		greenButton.addActionListener(this);
 		blueButton.addActionListener(this);
+		undoButton.addActionListener(this);
 
 		Box buttonBox = new Box(BoxLayout.X_AXIS);
 		buttonBox.add(clearButton);
 		buttonBox.add(redButton);
 		buttonBox.add(greenButton);
 		buttonBox.add(blueButton);
+		buttonBox.add(undoButton);
 		Box mainBox = new Box(BoxLayout.Y_AXIS);
 		mainBox.add(buttonBox);
 		mainBox.add(canvas);
@@ -108,6 +111,9 @@ public class Main extends JFrame implements ActionListener, MouseMotionListener,
 			Command command = new ColorCommand(canvas, Color.blue);
 			history.append(command);
 			command.execute();
+		} else if (e.getSource() == undoButton) {
+			history.undo();
+			canvas.repaint();
 		}
 	}
 
