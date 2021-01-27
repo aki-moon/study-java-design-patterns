@@ -3,6 +3,7 @@ package interpreter;
 import java.util.StringTokenizer;
 
 public class Context {
+	private ExecutorFactory executorFactory;
 	private StringTokenizer stringTokenizer;
 	private String currentToken;
 
@@ -35,6 +36,14 @@ public class Context {
 			currentToken = null;
 		}
 		return currentToken;
+	}
+
+	public void setExecutorFactory(ExecutorFactory factory) {
+		this.executorFactory = factory;
+	}
+
+	public Executor createExecutor(String name) {
+		return executorFactory.createExecutor(name);
 	}
 
 }

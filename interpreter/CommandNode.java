@@ -15,6 +15,11 @@ public class CommandNode extends Node {
 	}
 
 	@Override
+	public void execute() throws ExecuteException {
+		node.execute();
+	}
+
+	@Override
 	public String toString() {
 		return node.toString();
 	}

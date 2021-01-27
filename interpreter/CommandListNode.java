@@ -22,6 +22,13 @@ public class CommandListNode extends Node {
 	}
 
 	@Override
+	public void execute() throws ExecuteException {
+		for (Node node : list) {
+			node.execute();
+		}
+	}
+
+	@Override
 	public String toString() {
 		return list.toString();
 	}
