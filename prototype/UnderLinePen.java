@@ -1,6 +1,6 @@
-package prototype;
+package dessignpattern.prototype;
 
-import prototype.framework.Product;
+import dessignpattern.prototype.framework.Product;
 
 public class UnderLinePen extends Product {
 

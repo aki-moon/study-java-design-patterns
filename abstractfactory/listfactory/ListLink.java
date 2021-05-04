@@ -1,6 +1,6 @@
-package abstractfactory.listfactory;
+package dessignpattern.abstractfactory.listfactory;
 
-import abstractfactory.factory.Link;
+import dessignpattern.abstractfactory.factory.Link;
 
 public class ListLink extends Link {
 

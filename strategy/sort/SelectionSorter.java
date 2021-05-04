@@ -1,7 +1,8 @@
-package strategy.sort;
+package dessignpattern.strategy.sort;
 
 public class SelectionSorter implements Sorter {
 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Override
 	public void sort(Comparable[] data) {
 		for (int i = 0; i < data.length - 1; i++) {

@@ -1,4 +1,4 @@
-package state;
+package dessignpattern.state;
 
 public class Main {
 

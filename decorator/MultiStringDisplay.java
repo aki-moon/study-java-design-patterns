@@ -1,4 +1,4 @@
-package decorator;
+package dessignpattern.decorator;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,9 +1,11 @@
-package strategy.sort;
+package dessignpattern.strategy.sort;
 
 public class SortAndPrint {
+	@SuppressWarnings("rawtypes")
 	Comparable[] data;
 	Sorter sorter;
 
+	@SuppressWarnings("rawtypes")
 	public SortAndPrint(Comparable[] data, Sorter sorter) {
 		super();
 		this.data = data;

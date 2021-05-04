@@ -1,6 +1,7 @@
-package abstractfactory.factory;
+package dessignpattern.abstractfactory.factory;
 
 public abstract class Factory {
+	@SuppressWarnings("deprecation")
 	public static Factory getFactory(String className) {
 		Factory factory = null;
 		try {

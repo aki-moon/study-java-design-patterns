@@ -1,4 +1,4 @@
-package mediator;
+package dessignpattern.mediator;
 
 public interface Colleague {
 	public abstract void setMediator(Mediator mediator);

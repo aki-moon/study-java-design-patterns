@@ -1,4 +1,4 @@
-package builder;
+package dessignpattern.builder;
 
 public class Director {
 	private Builder builder;

@@ -1,4 +1,4 @@
-package decorator;
+package dessignpattern.decorator;
 
 public class StringDisplay extends Display {
 	private String string;

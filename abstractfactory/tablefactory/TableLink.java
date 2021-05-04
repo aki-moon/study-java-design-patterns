@@ -1,6 +1,6 @@
-package abstractfactory.tablefactory;
+package dessignpattern.abstractfactory.tablefactory;
 
-import abstractfactory.factory.Link;
+import dessignpattern.abstractfactory.factory.Link;
 
 public class TableLink extends Link {
 

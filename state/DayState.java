@@ -1,4 +1,4 @@
-package state;
+package dessignpattern.state;
 
 public class DayState implements State {
 	private static DayState singleton = new DayState();

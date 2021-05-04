@@ -1,4 +1,4 @@
-package bridge;
+package dessignpattern.bridge;
 
 public class CharDisplayImpl extends DisplayImpl{
 	private char head;

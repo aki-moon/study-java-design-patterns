@@ -1,4 +1,4 @@
-package mediator;
+package dessignpattern.mediator;
 
 import java.awt.CheckboxGroup;
 import java.awt.Color;
@@ -17,6 +17,7 @@ public class LoginFrame extends Frame implements ActionListener, Mediator{
 	private ColleagueButton buttonCancel;
 
 
+	@SuppressWarnings("deprecation")
 	public LoginFrame(String title){
 		super(title);
 		setBackground(Color.lightGray);

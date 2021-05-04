@@ -1,4 +1,4 @@
-package facade.pagemaker;
+package dessignpattern.facade.pagemaker;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

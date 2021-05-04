@@ -1,4 +1,4 @@
-package composite;
+package dessignpattern.composite;
 
 public class FileTreatmentException extends RuntimeException {
 

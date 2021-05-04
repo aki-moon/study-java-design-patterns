@@ -1,9 +1,9 @@
-package abstractfactory.tablefactory;
+package dessignpattern.abstractfactory.tablefactory;
 
-import abstractfactory.factory.Factory;
-import abstractfactory.factory.Link;
-import abstractfactory.factory.Page;
-import abstractfactory.factory.Tray;
+import dessignpattern.abstractfactory.factory.Factory;
+import dessignpattern.abstractfactory.factory.Link;
+import dessignpattern.abstractfactory.factory.Page;
+import dessignpattern.abstractfactory.factory.Tray;
 
 public class TableFactory extends Factory{
 

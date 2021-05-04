@@ -1,4 +1,4 @@
-package command;
+package dessignpattern.command;
 
 public interface Command {
 	public abstract void execute();

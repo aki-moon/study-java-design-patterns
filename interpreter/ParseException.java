@@ -1,4 +1,4 @@
-package interpreter;
+package dessignpattern.interpreter;
 
 public class ParseException extends Exception {
 

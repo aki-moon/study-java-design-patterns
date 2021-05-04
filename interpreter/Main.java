@@ -1,4 +1,4 @@
-package interpreter;
+package dessignpattern.interpreter;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;

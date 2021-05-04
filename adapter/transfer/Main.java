@@ -1,4 +1,4 @@
-package adapter.transfer;
+package dessignpattern.adapter.transfer;
 
 public class Main {
 

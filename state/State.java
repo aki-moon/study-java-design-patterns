@@ -1,4 +1,4 @@
-package state;
+package dessignpattern.state;
 
 public interface State {
 	public abstract void doClock(Context context, int hour);

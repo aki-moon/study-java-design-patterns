@@ -1,4 +1,4 @@
-package decorator;
+package dessignpattern.decorator;
 
 public class UpDownBorder extends Border{
 	private char borderChar;

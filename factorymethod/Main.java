@@ -1,8 +1,8 @@
-package factorymethod;
+package dessignpattern.factorymethod;
 
-import factorymethod.framework.Factory;
-import factorymethod.framework.Product;
-import factorymethod.idcard.IDCardFactory;
+import dessignpattern.factorymethod.framework.Factory;
+import dessignpattern.factorymethod.framework.Product;
+import dessignpattern.factorymethod.idcard.IDCardFactory;
 
 public class Main {
 	public static void main(String args[]) {

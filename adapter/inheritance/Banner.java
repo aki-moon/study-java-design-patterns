@@ -1,4 +1,4 @@
-package adapter.inheritance;
+package dessignpattern.adapter.inheritance;
 
 public class Banner {
 	private String text;

@@ -1,10 +1,11 @@
-package factorymethod.idcard;
+package dessignpattern.factorymethod.idcard;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import factorymethod.framework.Factory;
-import factorymethod.framework.Product;
+import dessignpattern.factorymethod.framework.Factory;
+import dessignpattern.factorymethod.framework.Product;
+
 
 public class IDCardFactory extends Factory {
 	private int initialSerialNumber = 0;

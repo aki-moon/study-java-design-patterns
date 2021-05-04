@@ -1,4 +1,4 @@
-package abstractfactory.factory;
+package dessignpattern.abstractfactory.factory;
 
 import java.io.FileWriter;
 import java.io.IOException;

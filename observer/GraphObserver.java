@@ -1,4 +1,4 @@
-package observer;
+package dessignpattern.observer;
 
 public class GraphObserver implements Observer {
 

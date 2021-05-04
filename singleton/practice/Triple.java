@@ -1,4 +1,4 @@
-package singleton.practice;
+package dessignpattern.singleton.practice;
 
 public class Triple {
 	private static Triple[] tripleArray = new Triple[] {

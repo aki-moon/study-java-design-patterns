@@ -1,4 +1,4 @@
-package decorator;
+package dessignpattern.decorator;
 
 public abstract class Border extends Display{
 	protected Display display;

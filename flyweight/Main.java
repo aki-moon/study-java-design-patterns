@@ -1,4 +1,4 @@
-package flyweight;
+package dessignpattern.flyweight;
 
 public class Main {
 	private static BigString[] bigStrings = new BigString[1000];

@@ -1,5 +1,5 @@
-package strategy.sort;
+package dessignpattern.strategy.sort;
 
 public interface Sorter {
-	public abstract void sort(Comparable[] data);
+	public abstract void sort(Comparable<?>[] data);
 }

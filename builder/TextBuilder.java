@@ -1,4 +1,4 @@
-package builder;
+package dessignpattern.builder;
 
 public class TextBuilder implements Builder{
 	private StringBuffer buffer = new StringBuffer();

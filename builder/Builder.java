@@ -1,4 +1,4 @@
-package builder;
+package dessignpattern.builder;
 
 public interface Builder {
 	public abstract void makeTitle(String title);

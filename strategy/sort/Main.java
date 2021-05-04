@@ -1,4 +1,4 @@
-package strategy.sort;
+package dessignpattern.strategy.sort;
 
 public class Main {
 	public static void main(String[] args) {

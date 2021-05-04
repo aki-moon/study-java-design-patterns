@@ -1,4 +1,4 @@
-package facade.pagemaker;
+package dessignpattern.facade.pagemaker;
 
 import java.io.FileWriter;
 import java.io.IOException;

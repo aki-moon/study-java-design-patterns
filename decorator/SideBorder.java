@@ -1,4 +1,4 @@
-package decorator;
+package dessignpattern.decorator;
 
 public class SideBorder extends Border{
 	private char borderChar;

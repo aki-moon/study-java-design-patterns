@@ -1,4 +1,4 @@
-package iterator;
+package dessignpattern.iterator;
 
 import java.util.ArrayList;
 import java.util.List;

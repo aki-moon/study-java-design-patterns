@@ -1,14 +1,17 @@
-package strategy.sort;
+package dessignpattern.strategy.sort;
 
 public class QuickSorter implements Sorter {
+	@SuppressWarnings("rawtypes")
 	Comparable[] data;
 
+	@SuppressWarnings("rawtypes")
 	@Override
 	public void sort(Comparable[] data) {
 		this.data = data;
 		quickSort(0, data.length - 1);
 	}
 
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	private void quickSort(int pre, int post) {
 		int saved_pre = pre;
 		int saved_post = post;

@@ -1,7 +1,7 @@
-package abstractfactory.tablefactory;
+package dessignpattern.abstractfactory.tablefactory;
 
-import abstractfactory.factory.Item;
-import abstractfactory.factory.Page;
+import dessignpattern.abstractfactory.factory.Item;
+import dessignpattern.abstractfactory.factory.Page;
 
 public class TablePage extends Page {
 

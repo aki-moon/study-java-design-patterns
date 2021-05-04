@@ -1,4 +1,4 @@
-package templatemethod;
+package dessignpattern.templatemethod;
 
 public class Main {
 

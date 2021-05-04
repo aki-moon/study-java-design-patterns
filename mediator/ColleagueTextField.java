@@ -1,4 +1,4 @@
-package mediator;
+package dessignpattern.mediator;
 
 import java.awt.Color;
 import java.awt.TextField;

@@ -1,4 +1,4 @@
-package interpreter;
+package dessignpattern.interpreter;
 
 public class CommandNode extends Node {
 	private Node node;

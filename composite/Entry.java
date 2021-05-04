@@ -1,4 +1,4 @@
-package composite;
+package dessignpattern.composite;
 
 public abstract class Entry {
 	protected Entry parent;

@@ -1,4 +1,4 @@
-package prototype.framework;
+package dessignpattern.prototype.framework;
 
 import java.util.HashMap;
 

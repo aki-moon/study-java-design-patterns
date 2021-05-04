@@ -1,4 +1,4 @@
-package command;
+package dessignpattern.command;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;

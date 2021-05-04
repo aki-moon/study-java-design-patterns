@@ -1,4 +1,4 @@
-package mediator;
+package dessignpattern.mediator;
 
 public class Main {
 

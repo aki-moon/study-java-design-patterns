@@ -1,4 +1,4 @@
-package chainofresponsiblity;
+package dessignpattern.chainofresponsiblity;
 
 public abstract class Support {
 	private String name;

@@ -1,4 +1,4 @@
-package memento;
+package dessignpattern.memento;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

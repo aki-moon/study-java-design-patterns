@@ -1,4 +1,4 @@
-package chainofresponsiblity;
+package dessignpattern.chainofresponsiblity;
 
 public class NoSupport extends Support{
 

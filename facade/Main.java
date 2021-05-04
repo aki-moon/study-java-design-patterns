@@ -1,6 +1,6 @@
-package facade;
+package dessignpattern.facade;
 
-import facade.pagemaker.PageMaker;
+import dessignpattern.facade.pagemaker.PageMaker;
 
 public class Main {
 

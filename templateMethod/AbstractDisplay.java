@@ -1,4 +1,4 @@
-package templatemethod;
+package dessignpattern.templatemethod;
 
 public abstract class AbstractDisplay {
 	protected abstract void open();

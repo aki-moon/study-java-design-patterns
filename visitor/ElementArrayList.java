@@ -1,9 +1,9 @@
-package visitor;
+package dessignpattern.visitor;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class ElementArrayList extends ArrayList implements Element{
+public class ElementArrayList extends ArrayList<Object> implements Element{
 
 	@Override
 	public void accept(Visitor visitor) {

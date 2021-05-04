@@ -1,4 +1,4 @@
-package observer;
+package dessignpattern.observer;
 
 public class IncrementalNumberGenerator extends NumberGenerator {
 	private int number;

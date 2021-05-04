@@ -1,4 +1,4 @@
-package factorymethod.framework;
+package dessignpattern.factorymethod.framework;
 
 public abstract class Factory {
 	public final Product create(String owner) {

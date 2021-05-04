@@ -1,4 +1,4 @@
-package bridge;
+package dessignpattern.bridge;
 
 public class IncreaseDisplay extends CountDisplay{
 	private int step;

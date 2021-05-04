@@ -1,4 +1,4 @@
-package abstractfactory.factory;
+package dessignpattern.abstractfactory.factory;
 
 import java.util.ArrayList;
 import java.util.List;

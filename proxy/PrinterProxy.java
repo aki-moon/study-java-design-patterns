@@ -1,4 +1,4 @@
-package proxy;
+package dessignpattern.proxy;
 
 public class PrinterProxy implements Printable {
 	private String name;

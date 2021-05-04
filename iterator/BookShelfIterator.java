@@ -1,4 +1,4 @@
-package iterator;
+package dessignpattern.iterator;
 
 public class BookShelfIterator implements Iterator {
 

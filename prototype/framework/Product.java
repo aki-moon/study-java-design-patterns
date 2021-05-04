@@ -1,4 +1,4 @@
-package prototype.framework;
+package dessignpattern.prototype.framework;
 
 public abstract class Product implements Cloneable {
 	public abstract void use(String use);

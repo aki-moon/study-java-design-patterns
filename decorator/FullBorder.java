@@ -1,4 +1,4 @@
-package decorator;
+package dessignpattern.decorator;
 
 public class FullBorder extends Border {
 

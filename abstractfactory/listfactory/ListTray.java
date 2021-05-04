@@ -1,7 +1,7 @@
-package abstractfactory.listfactory;
+package dessignpattern.abstractfactory.listfactory;
 
-import abstractfactory.factory.Item;
-import abstractfactory.factory.Tray;
+import dessignpattern.abstractfactory.factory.Item;
+import dessignpattern.abstractfactory.factory.Tray;
 
 public class ListTray extends Tray {
 

@@ -1,4 +1,4 @@
-package adapter.fileproperties;
+package dessignpattern.adapter.fileproperties;
 
 import java.io.IOException;
 

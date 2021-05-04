@@ -1,4 +1,4 @@
-package builder;
+package dessignpattern.builder;
 
 import javax.swing.JFrame;
 

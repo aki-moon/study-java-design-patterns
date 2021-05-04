@@ -1,4 +1,4 @@
-package adapter.transfer;
+package dessignpattern.adapter.transfer;
 
 public abstract class Print {
 	public abstract void printWeak();

@@ -1,4 +1,4 @@
-package composite;
+package dessignpattern.composite;
 
 import java.util.ArrayList;
 

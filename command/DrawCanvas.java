@@ -1,4 +1,4 @@
-package command;
+package dessignpattern.command;
 
 import java.awt.Canvas;
 import java.awt.Color;

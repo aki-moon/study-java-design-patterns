@@ -1,4 +1,4 @@
-package visitor;
+package dessignpattern.visitor;
 
 import java.util.Iterator;
 

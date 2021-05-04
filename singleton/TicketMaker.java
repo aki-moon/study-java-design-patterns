@@ -1,4 +1,4 @@
-package singleton;
+package dessignpattern.singleton;
 
 public class TicketMaker {
 	private static TicketMaker ticketMaker = new TicketMaker();

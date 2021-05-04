@@ -1,4 +1,4 @@
-package builder;
+package dessignpattern.builder;
 
 import java.io.FileWriter;
 import java.io.IOException;

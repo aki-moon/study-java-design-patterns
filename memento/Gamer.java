@@ -1,4 +1,4 @@
-package memento;
+package dessignpattern.memento;
 
 import java.util.ArrayList;
 import java.util.List;

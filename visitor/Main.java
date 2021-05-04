@@ -1,6 +1,6 @@
-package visitor;
+package dessignpattern.visitor;
 
-import composite.FileTreatmentException;
+import dessignpattern.composite.FileTreatmentException;
 
 public class Main {
 	public static void main(String[] args) {

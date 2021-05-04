@@ -1,4 +1,4 @@
-package interpreter;
+package dessignpattern.interpreter;
 
 public class RepeatCommandNode extends Node {
 	private int number;

@@ -1,4 +1,4 @@
-package strategy.janken;
+package dessignpattern.strategy.janken;
 
 import java.util.Random;
 

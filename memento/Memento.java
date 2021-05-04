@@ -1,4 +1,4 @@
-package memento;
+package dessignpattern.memento;
 
 import java.io.Serializable;
 import java.util.ArrayList;

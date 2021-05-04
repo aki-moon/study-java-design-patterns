@@ -1,4 +1,4 @@
-package decorator;
+package dessignpattern.decorator;
 
 public abstract class Display {
 	public abstract int getColumuns();

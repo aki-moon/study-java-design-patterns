@@ -1,4 +1,4 @@
-package templatemethod;
+package dessignpattern.templatemethod;
 
 public class CharDisplay extends AbstractDisplay {
 	private char character;

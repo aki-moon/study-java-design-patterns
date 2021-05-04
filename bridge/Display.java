@@ -1,4 +1,4 @@
-package bridge;
+package dessignpattern.bridge;
 
 public class Display {
 	private DisplayImpl displayImpl;

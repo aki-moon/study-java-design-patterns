@@ -1,4 +1,4 @@
-package proxy;
+package dessignpattern.proxy;
 
 public interface Printable {
 	public abstract void setPrinterName(String name);
